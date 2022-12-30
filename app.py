@@ -22,9 +22,10 @@ while True:
     if event == "Calcular":
      
       const_num = int(values["numero"])
+      window["tabuada"].print(f'A Tabuada de {const_num} é :')
+      for x in range(11):
+        n = window["tabuada"].print(f'{const_num} x {x} = {x*const_num}')
       
-      
-      window["tabuada"].print( f'A tabuada de {const_num} é \n {const_num} x 0 = {0 * const_num} \n {const_num} x 1 = {1 * const_num} \n {const_num} x 2 = {2 * const_num} \n {const_num} x 3 = {3 * const_num} \n {const_num} x 4 = {4 * const_num} \n {const_num} x 5 = {5 * const_num} \n {const_num} x 6 = {6 * const_num} \n {const_num} x 7 = {7 * const_num} \n {const_num} x 8 = {8 * const_num} \n {const_num} x 9 = {9 * const_num} \n {const_num} x 10 = {10 * const_num} \n' )
       window.refresh()
 
 
